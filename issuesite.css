@@ -1,0 +1,80 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+ body {
+	 background-color:#6B483D; 
+	
+}
+
+header {
+	background-color:#E2B4A5; 
+	color:#6B483D;
+	display: flex;
+	align-items: center; 
+}
+.headcontainer { 
+	width: 100%; 
+	display: flex;
+	align-items: center; 
+	align-content:center; 
+	margin-left: 1.5% ;
+}
+
+.sidenav {
+  width:12%;
+  position: fixed;
+  background: #E2B4A5 ;
+  overflow-x: hidden; 
+	margin-top:1%; 
+	border: solid #FCDB83;
+} 
+
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+	font-size: 1.5em; 
+  text-decoration: none;
+  font-size-adjust: auto;
+  color: #6B483D;
+  display: block;
+} /*FIX SIDENAV so whole nav is visible in smaller windows but still fixed */
+
+.sidenav a:hover {
+	background-color:#FCDB83;
+  color:#7C5300;
+}
+
+@media screen and (max-height: 650px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+p {
+	font-size: 1.15em;
+}
+
+h3 {font-size: 1.45em;
+	
+}
+
+h1 {font-size:2em;}
+
+.hover-link {
+  color:#F83068; 
+	text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+  color: #FCDB83;
+}
+
+
+footer {
+	position: fixed;
+	left:0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #E2B4A5; 
+}
